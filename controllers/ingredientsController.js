@@ -12,11 +12,11 @@ exports.createIngredient = async (req, res) => {
 
         const { ingredient_name, stock_quantity, unit, status } = req.body;
 
-        if (!ingredient_name || stock_quantity === undefined || !unit) {
-            return res.status(400).json({
-                message: "Ingredient name, stock quantity and unit are required"
-            });
-        }
+        // if (!ingredient_name || stock_quantity === undefined || !unit) {
+        //     return res.status(400).json({
+        //         message: "Ingredient name, stock quantity and unit are required"
+        //     });
+        // }
 
         const ingredient = {
             ingredient_id: generateID(),
